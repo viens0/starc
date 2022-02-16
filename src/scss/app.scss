@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --main-color: #6d519d;
+    --main-color-dark: #553f7b;
+    --text-color: #3a4166;
+    --text-color-light: #a9afb8;
+    --text-main: #fff;
+    --header-height: 3rem;
+    --body-color: #fff;
+    --container-color: #f6fbff;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@import "navigation";
+@import "hero";
+@import "layout";
+@import "button";
+@import "footer";
+@import "service";
+@import "section";
+@import "flex";
+@import "grid";
